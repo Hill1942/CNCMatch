@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Navigation;
+using Microsoft.Phone.Controls;
+using Microsoft.Phone.Shell;
+
+namespace CNCMatch.MyControls
+{
+    public partial class TimeBar : UserControl
+    {
+        public TimeBar()
+        {
+            this.InitializeComponent();
+
+            timerBarAnimation.Begin();
+        }
+        public void setTimeBarWidth(double width)
+        {
+            this.timerBarRec.Width = width;
+        }
+        public double getTimeBarWidth()
+        {
+            return timerBarRec.Width;
+        }
+    }
+}

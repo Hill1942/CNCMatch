@@ -1,0 +1,36 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="CNCMatch.HelpPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/Photos/PageBG.png"/>
+        </Grid.Background>
+        <Canvas Name="helpPageCanvas">
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="10" Height="387" Width="407" FontSize="20">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF73F7E5" Offset="0.219"/>
+                        <GradientStop Color="#FF0D0785" Offset="0.992"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+        		<Run Text="    In this game, you are supposed to choose two cards. When you tap a card, the card will turn over and show you the picture. And once  two cards  turn over, the game will check whether the pictures showed on  the cards are the same. If they are the same, the two cards are going to disappear. If not, the two cards will turn over and show their back. When  all cards disappear, the game is over. Of course, the game is testing your memory and the less time you spend, the better you are. By the way, you can tap the trademark of "/>
+        		<Run FontStyle="Italic" Text="EA "/>
+        		<Run Text="to go back the startpage."/>
+            </TextBlock>
+        </Canvas>
+    </Grid>
+
+</phone:PhoneApplicationPage>
